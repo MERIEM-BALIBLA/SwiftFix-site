@@ -98,6 +98,12 @@
     text-align: center;
     width: 62%;
     }
+    .slide {
+        flex: 0 0 66%;
+    }
+    .slide-container {
+        gap: 16%;
+    }
   }
 /* ---------------- */
   @media screen and (min-width : 413px) and (max-width : 767px) {

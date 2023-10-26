@@ -18,18 +18,37 @@ buttons.forEach((button, i) => {
   });
 });
 
-let slides = document.querySelectorAll(".slide");
-let index = 0;
-function next() {
-    slides[index].classList.remove('active');
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
-}
-function preview() {
-    slides[index].classList.remove('active');
-    index = (index - 1 + slides.length) % slides.length;
-    slides[index].classList.add('active');
-}
+// let slides = document.querySelectorAll(".slide");
+// let index = 0;
+// function next() {
+//     slides[index].classList.remove('active');
+//     index = (index + 1) % slides.length;
+//     slides[index].classList.add('active');
+// }
+// function preview() {
+//     slides[index].classList.remove('active');
+//     index = (index - 1 + slides.length) % slides.length;
+//     slides[index].classList.add('active');
+// }
+var slider = document.querySelector(".slide-container")
+var next = document.querySelector("#next")
+var preview = document.querySelector("#preview")
+var i = 0;
+preview.addEventListener("click",()=>{
 
-
+ if(i > 0){
+    i--;
+    translation();
+  }
+})
+next.addEventListener("click",()=>{
+  if(i < 1){
+    i++;
+    translation();
+  }
+})
+function translation(){
+  var transSlide = -i*100;
+  slider.style.transform = `translateX(${transSlide}%)`
+}
 
