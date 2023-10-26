@@ -1,0 +1,192 @@
+@media screen and (min-width : 413px) and (max-width : 767px) {
+    .menu-b {
+        display: none;
+        
+    }
+
+    header {
+        position: static;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        margin-left: -53%;
+        margin-top: 2%;
+        width: 40%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .toggle i {
+        display: block;
+        font-size: 2rem;
+        position: absolute;
+        margin-left: 29%;
+        margin-top: 5%;
+    }
+     
+    .recherche {
+        flex-direction: row-reverse;
+    position: absolute;
+    right: 35%;
+    top: -6px;
+    }
+    
+    }
+
+    @media screen and (min-width : 413px) and (max-width : 767px){
+        .home-section1 {
+            display: block;
+            flex-direction: row;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        .section {
+      
+            margin: 13px;
+        }
+        
+        .section h2 {
+            color: #094B72;
+            font-family: Playfair Display;
+            font-size: 33px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+            letter-spacing: 1.38px;
+            margin-bottom: 25px;
+        }
+        .section p {
+            color: var(--neutral-grey-6, #4F4F4F);
+            font-family: Plus Jakarta Sans;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 158%;
+            letter-spacing: 0.5px;
+            margin-bottom: 3rem;
+        }
+    
+        .image {
+            display: none;
+        }
+        .home-section2 {
+            padding: 4em 0rem;
+            background-color: #F2F7FF;
+            display: block;
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+        .question {
+            flex: 0 0 50%;
+            padding: 7% 11%;
+            text-align: center;
+        }
+        .service {
+                display: inline-block;
+                width: 53%;
+                height: 230px;
+                vertical-align: top;
+                margin-bottom: 1rem;
+                margin-left: 6rem;
+                padding: 14px 17px;
+                background-color: #FFF;
+                box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
+        }
+        .home-section3 {
+            position: relative;
+            background-image: url(images/background.svg);
+            text-align: center;
+            padding-top: 4rem;
+            padding-bottom: 5rem;
+        }
+        .count-matters {
+            font-size: 19px;
+            text-align: center;
+        }
+        .countainer {
+            display: block;
+        }
+        .home-section4 {
+            background-color: #F2F7FF;
+            padding: 3rem 0 7rem 0;
+        }
+    
+        .countainer_section4 {
+            display: block;
+            justify-content: space-around;
+            margin-top: 4rem;
+        }
+    
+        .home-section5 {
+            padding: 0;
+        text-align: center;
+        }
+    
+        .home-section5 h4 {
+            margin: 0px 1em;
+            color: var(--neutral-grey-7, #2D2F30);
+            font-family: Playfair Display;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 636px;
+            line-height: 64px;
+            letter-spacing: 0.5px;
+        }
+    
+        .home-section5 p {
+            margin: 2em 2em;
+        width: 80%;
+        color: var(--neutral-grey-6, #4F4F4F);
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0.5px;
+        }
+    
+        .home-section5 button {
+            width: 48%;
+            border-radius: 8px;
+            background: #094B72;
+            color: var(--neutral-grey-1, #F9F8F9);
+            font-family: Plus Jakarta Sans;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 1.28px;
+            margin-bottom: 7rem;
+            padding: 15px;
+            margin-left: 0em;
+        }
+    }
+
+    @media screen and (min-width : 413px) and (max-width : 767px) {
+        .feet1 {
+            background-color: #094B72;
+            color: #FFF;
+            display: block;
+            padding: 0;
+        }
+        .logo2 {
+            margin-left: 6rem;
+            margin-top: 3em;
+            display: block;
+        }
+        .feet2 {
+            background-color: #004D7B;
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            color: #ffffff;
+            text-align: center;
+        }
+    }

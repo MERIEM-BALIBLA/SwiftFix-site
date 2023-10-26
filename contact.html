@@ -3,41 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwiftFix</title>
-    <link rel="stylesheet" href="style.css">    
+    <title>Document</title>
+    <link rel="stylesheet" href="contact-style.css">   
+    <link rel="stylesheet" href="responsive-contact.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Fonts Section -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        .info span {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="header">
-            <div class="logo">
-                <img src="images/logo.svg" alt="img">
-                <p>SwiftFix</p>
-            </div>
-            <div class="navigation">
-                <div class="menu">
-                    <ul>
+                <img class="logo" src="images/logo.svg" alt="img">
+                <div class="navigation">
+                <div>
+                    <ul class="menu">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT US</a></li>
                         <li><a href="services.html">SERVICES</a></li>
                         <li><a href="contact.html">CONTACT US</a></li>
                     </ul>
                 </div>
-                <div>
-                    <img src="images/recherche.svg" alt="recherche">
+                <div class="recherche">
+                    <img class="recherche-icon" src="images/recherche.svg" alt="recherche">
+                    <div class="input">
+                        <input type="text" placeholder="recherche">
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="toggle"><i class="fa fa-bars"></i></div>
+                        <ul class="list-menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>               
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,35 +51,43 @@
     <section class="contact">
         <div class="form">
             <h3>For more information contact us</h3>
-            <form class="info">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Phone Number">
-                <select aria-label="State">
-                    <option disabled="disabled" selected="Country">Country</option>
-                    <option >Morocco</option>
-                    <option >Egypt</option>
-                    <option >Lebanon</option>
-                    <option >Tunis</option>
+            <form class="info" id="contact-form" >
+                <input type="text" placeholder="Full name" id="name"  onkeyup="valide()" required>
+                <span id="error"></span>
+                <input type="text" placeholder="Email" id="email" onkeyup="valideEmail()" required>
+                <span id="error-email"></span>
+                <!-- <input type="text" placeholder="Phone Number" id="phone" onkeyup="valideNumber()">
+                <span id="error-phone"></span> -->
+                <input type="text" placeholder="Phone Number" id="phone" onkeyup="validateNumber()" required>
+                <span id="error-phone"></span>
+                <select aria-label="Country" id="country" required>
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Tunisia">Tunisia</option>
                 </select>
-                <input type="text" placeholder="Address">
-                <select aria-label="State">
-                    <option disabled="disabled" selected="issues">Issues</option>
-                    <option>Unexpected Breakdown</option>
-                    <option>Downtime</option>
-                    <option>Maintenance Not Formalized</option>
-                    <option>Audit</option>
+                <span id="error-country"></span>
+                <input type="text" placeholder="Address" id="address" onkeyup="validateAdress()" required>
+                <span id="error-address"></span>
+                <select aria-label="Issues" id="issues" required>
+                    <option value="" disabled selected>Select Issue</option>
+                    <option value="Unexpected Breakdown">Unexpected Breakdown</option>
+                    <option value="Downtime">Downtime</option>
+                    <option value="Maintenance Not Formalized">Maintenance Not Formalized</option>
+                    <option value="Audit">Audit</option>
                 </select>
-                <textarea placeholder="Message"></textarea>
-                <!-- <div class="Message">
-                    <input type="text" placeholder="Message">
-                </div> -->
-                <button>SEND</button>
+                <span class="error"></span>
+                <textarea placeholder="Message" id="message" onkeyup="validateMessage()" required></textarea>
+                <span id="error-message"></span>
+                <button type="submit" onclick="return formvalidet()" >SEND</button>
+                <span id="error-submit"></span>
             </form>
+            <p style="color: red;" id="erreur"></p>
         </div>
         <div>
             <div class="MAP">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6563.952802744115!2d-8.528928881840777!3d32.24914254540518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1697184845667!5m2!1sfr!2sma" width="500" height="300" style="border:0;" allowfullscreen="#" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="myFrame">frame body</iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6563.952802744115!2d-8.528928881840777!3d32.24914254540518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1697184845667!5m2!1sfr!2sma" style="border:0;" allowfullscreen="#" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="myFrame">frame body</iframe>
             </div>
             <div class="tele">
                 <img src="images/telephone-number-svgrepo-com.svg" alt="tele">
@@ -136,7 +149,106 @@
        <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="img"></a>
     </div>
     </div>
-    
 </footer>
+<script src="header.js"></script>
+<script>
+    var error = document.querySelector("#error")
+    console.log(valide);
+function valide() {
+   var name = document.querySelector("#name").value;
+   if(name.length == 0){
+       error.innerHTML = "name's requiered";
+       error.style.color = "red";
+       return false;
+   }
+   if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+       error.innerHTML = "rewrite your name";
+       error.style.color = "red";
+       return false;
+   }
+       error.innerHTML = "valid";
+       error.style.color = "green";
+       return true;
+    }
+var errorE = document.querySelector("#error-email")
+function valideEmail(){
+    var email = document.querySelector("#email").value;
+    if(email.length == 0){
+       errorE.innerHTML = "email's requiered";
+       errorE.style.color = "red";
+       return false;
+   }
+    if(!email.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)){
+        errorE.innerHTML = "Email incorecte";
+        errorE.style.color = "red";
+        return false;
+    }
+    errorE.innerHTML = "Email corecte";
+    errorE.style.color = "green";
+    return true;
+}
+var errorP = document.querySelector("#error-phone");
+function validateNumber() {
+    var phone = document.querySelector("#phone").value;
+    if (phone.length == 0) {
+        errorP.innerHTML = "Numéro requis";
+        errorP.style.color = "red";
+        return false;
+    }  
+    if (!phone.match(/^\+212-[67]\d{8}$/)) {
+        errorP.innerHTML = "Numéro incorrect";
+        errorP.style.color = "red";
+        return false;
+    } 
+    errorP.innerHTML = "Numéro valide";
+    errorP.style.color = "green";
+    return true;
+}
+var errorA = document.querySelector("#error-address");
+function validateAdress() {
+    var address = document.querySelector("#address").value;
+    if (address.length == 0) {
+        errorA.innerHTML = "Numéro requis";
+        errorA.style.color = "red";
+        return false;
+    }  
+    if (!address.match(/^[\w\s]{10,40}$/)){
+        errorA.innerHTML = "Numéro incorrect";
+        errorA.style.color = "red";
+        return false;
+    } 
+    errorA.innerHTML = "Numéro valide";
+    errorA.style.color = "green";
+    return true;
+}
+var errorM = document.querySelector("#error-message");
+function validateMessage() {
+    var message = document.querySelector("#message").value;
+    if (message.length == 0) {
+        errorM.innerHTML = "msg requis";
+        errorM.style.color = "red";
+        return false;
+    }  
+    if (!message.match(/^.{10,40}$/)) {
+        errorM.innerHTML = "msg incorrect";
+        errorM.style.color = "red";
+        return false;
+    } 
+    errorM.innerHTML = "msg valide";
+    errorM.style.color = "green";
+    return true;
+ }
+var submiterror = document.getElementById('error-submit');
+
+ function formvalidet(){
+    if(!valide() || !valideEmail() || !validateNumber() || !validateAdress() || !validateMessage()){
+        submiterror.innerHTML = 'please enter ur information !';
+        submiterror.style.color = "red";
+        setTimeout(function(){submiterror.style.display = 'none';},3000);
+        return false;
+    }
+    alert("Le message a ete bien enregistre !");
+}
+</script>
 </body>
 </html>

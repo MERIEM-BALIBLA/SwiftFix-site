@@ -1,0 +1,129 @@
+@media screen and (min-width : 413px) and (max-width : 767px) {
+    .menu-b {
+        display: none;      
+    }
+    header {
+        position: static;
+    }
+    .header {
+        flex-direction: column-reverse;
+    }
+    .logo {
+        margin-left: -53%;
+        margin-top: 2%;
+        width: 40%;
+    }
+    .menu {
+        display: none;
+    }
+    .toggle i {
+        display: block;
+        font-size: 2rem;
+        position: absolute;
+        margin-left: 29%;
+        margin-top: 5%;
+    }
+    .recherche {
+        flex-direction: row-reverse;
+    position: absolute;
+    right: 35%;
+    top: -6px;
+    }
+    }
+/* ------------------------- */
+  @media screen and (min-width : 413px) and (max-width : 767px) {
+    .contact {
+        display: block;
+        background-color: #F2F7FF;
+        padding: 0;
+        gap : 7em;
+     }
+     }
+     
+  @media screen and (min-width : 413px) and (max-width : 767px) {
+.form {
+    text-align: center;
+    padding: 5em;
+}
+.form h3 {
+    color: #094B72;
+    font-family: Playfair Display, sans-serif;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1.8px;
+}
+}
+.info {
+        padding: 2% 0%;
+        display: flex;
+        flex-direction: column;
+}
+.info input {
+        width: 97%;
+        height: auto;
+}
+    
+    .info select {
+       width: 97%;
+       height: auto;
+    }
+    .info textarea {
+       width: 97%;
+       height: 200px;
+    }
+
+    .info button {
+        width: 10em;
+        padding: 15px;
+        transform: translate(-50%, -50%);
+        margin: 3em 45%;
+    }
+  
+
+  @media screen and (max-width : 960px) {
+    .MAP {
+        display: none;
+    }
+
+    .tele {
+        padding: 0 28%;
+        margin-top: 2em;
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+    .email {
+            padding: 0 27% 12px 27%;
+            margin-top: 2em;
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+    }
+    
+  }
+
+  @media screen and (min-width : 413px) and (max-width : 767px) {
+    .feet1 {
+        background-color: #094B72;
+        color: #FFF;
+        display: block;
+        padding: 0;
+    }
+    .logo2 {
+        margin-left: 6rem;
+        margin-top: 3em;
+        display: block;
+    }
+    .feet2 {
+        background-color: #004D7B;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        color: #ffffff;
+        text-align: center;
+    }
+  
+    }

@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWiftFix</title>
-    <link rel="stylesheet" href="style.css">
+     <!-- les sources cachés -->
+     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+     <meta http-equiv="Pragma" content="no-cache">
+     <meta http-equiv="Expires" content="0">
+     <!-- ------------------ -->
+    <title>Document</title>
+    <link rel="stylesheet" href="about-style.css">
+    <link rel="stylesheet" href="responsive-about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Fonts Section -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,34 +28,47 @@
 <body>
     <header>
         <div class="header">
-            <div class="logo">
-                <img src="images/logo.svg" alt="img">
-                <p>SwiftFix</p>
-            </div>
-            <div class="navigation">
-                <div class="menu">
-                    <ul>
+                <img class="logo" src="images/logo.svg" alt="img">
+                <div class="navigation">
+                <div>
+                    <ul class="menu">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT US</a></li>
                         <li><a href="services.html">SERVICES</a></li>
                         <li><a href="contact.html">CONTACT US</a></li>
                     </ul>
                 </div>
-                <div>
-                    <img src="images/recherche.svg" alt="recherche">
+                <div class="recherche">
+                    <img class="recherche-icon" src="images/recherche.svg" alt="recherche">
+                    <div class="input">
+                        <input type="text" placeholder="recherche">
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="toggle"><i class="fa fa-bars"></i></div>
+                        <ul class="list-menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>               
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 <!---------------section 2------------------>
         <section class="section-about1">
-            <img class="background-about" src="images/background-about.webp" alt="background">
+            <div class="container-about">
             <div class="who-are-we">
                 <h1>HOME/OUR TEAM</h1>
-                <p>WHO <br>ARE WE</p>
+                <p>WHO 
+                    ARE WE</p>
             </div>
-        </section>
+        </div>
         <div class="welcome"><h2>Welcome To SwiftFix</h2></div>
+        </section>
+        
         
 <!---------------section 2------------------->
     <section class="about-us">
@@ -63,33 +84,34 @@
         
 <!---------------section 2------------------->
         <section class="history">
-            <div class="pic">
-                <img class="pic-his" src="images/history.svg" alt="history">
-            </div>
+            
             <div class="contenu2">
                 <h3>Our Story</h3>
                 <p><span><strong>SwiftFix</strong></span>, a company founded in 1990, has grown from a modest startup to a leading maintenance services provider. Their journey is marked by a commitment to quality and innovation. Over the years, they expanded their services from basic maintenance to specialized solutions, embracing technology and sustainability. Today, MaintenancePro is at the forefront of the industry, offering cutting-edge maintenance services and environmentally responsible solutions.</p>
                 <button>READ MORE</button>
             </div>
+                <img class="pic-his" src="images/history.svg" alt="history">
         </section>
-<!---------------section 3------------------->
-        <section class="client-comments">
+<!-- -------------section 3----------------- -->
+        <h2 style="text-align: center;color: #094B72;font-family: Playfair Display;font-size: 50px;font-style: normal;
+font-weight: 700;line-height: 120%;letter-spacing: 1.8px;">Our Team</h2>       
+        <section class="squad">
             <div class="comments">
-                <img class="comment" src="images/comment.svg" alt="comment">
-                <img class="personnage" src="images/personnage3.svg" alt="un client">
+                <img class="comment" src="images/squad.png" alt="comment">
+                <img class="personnage" src="images/p1.jpg" alt="un client">
                 <div class="person">
                 <h4>Jorch morik</h4>
                 <img class="etoiles" src="images/etoile.svg" alt="etoiles">
                 <img class="etoiles" src="images/etoile.svg" alt="etoiles">
                 <img class="etoiles" src="images/etoile.svg" alt="etoiles">
                 <p>chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum</p>
-            </div>
+                </div>
             </div>
             <div class="comments">
-                <img class="comment" src="images/comment.svg" alt="comment">
-                <img class="personnage" src="images/personnage1.svg" alt="un client">
+                <img class="comment" src="images/squad.png" alt="comment">
+                <img class="personnage" src="images/p2.jpg" alt="un client">
                 <div class="person">
-                    <h4>Jorch morik</h4>
+                    <h4>Jonny Waterson</h4>
                     <img class="etoiles" src="images/etoile.svg" alt="etoiles">
                     <img class="etoiles" src="images/etoile.svg" alt="etoiles">
                     <img class="etoiles" src="images/etoile.svg" alt="etoiles">
@@ -98,21 +120,73 @@
             
             </div>
             <div class="comments">
-                <img class="comment" src="images/comment.svg" alt="comment">
-                <img class="personnage" src="images/personnage2.svg" alt="un client">
+                <img class="comment" src="images/squad.png" alt="comment">
+                <img class="personnage" src="images/p3.jpg" alt="un client">
                 <div class="person">
-                    <h4>Jorch morik</h4>
+                    <h4>Sarah Don</h4>
+                    <div class="bloc-etoiles">
+                      <img class="etoiles" src="images/etoile.svg" alt="etoiles">
                     <img class="etoiles" src="images/etoile.svg" alt="etoiles">
-                    <img class="etoiles" src="images/etoile.svg" alt="etoiles">
-                    <img class="etoiles" src="images/etoile.svg" alt="etoiles">
+                    <img class="etoiles" src="images/etoile.svg" alt="etoiles">  
+                    </div>
+                    
                     <p>chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum</p>
+                </div>
             </div>
+        </section>
+        <!-- ---- -->
+        <section class="FAQ">
+            <div class ="countainer">
+                <h2>Frequently Asked Questions</h2>
+                <div class="layout">
+                    <div class="accordion">
+                        <div class="accordion__question">
+                             <p>Avez-vous des garanties pour vos services de maintenance ?</p>
+                        </div>
+                        <div class="accordion__answer">
+                            <p>Discutez des garanties ou assurances que vous offrez avec vos services.</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__question">
+                            <p>Quelles industries ou types d'équipements servez-vous ?</p>
+                        </div>
+                        <div class="accordion__answer">
+                            <p>Énumérez les secteurs ou les équipements pour lesquels vous fournissez des services de maintenance.</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__question">
+                            <p>Comment puis-je annuler ou reporter un service de maintenance ?</p>
+                        </div>
+                        <div class="accordion__answer">
+                            <p>Fournissez des informations sur le processus d'annulation ou de report de rendez-vous de maintenance.</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__question">
+                            <p>Quelle est votre politique de tarification ?</p>
+                        </div>
+                        <div class="accordion__answer">
+                            <p>Donnez une idée des méthodes de tarification que vous utilisez, que ce soit à l'heure, au forfait, ou basé sur le projet.</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__question">
+                            <p>Quels types de services de maintenance proposez-vous ?</p>
+                        </div>
+                        <div class="accordion__answer">
+                            <p>Répondez en détail en énumérant les services que votre entreprise propose, comme la maintenance préventive, la réparation d'équipements, le service d'urgence, etc.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+            <img src="images/faq.webp" alt="faq">
+            </table>
         </section>
 
-<!---------------footer------------------->
-<footer>
+<!-- -------------footer------------------ -->
+ <footer>
     <div class="feets">
         <div class="feet1">
             <div class="logo2">
@@ -161,7 +235,20 @@
        <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="img"></a>
     </div>
     </div>
-    
 </footer>
+<script src="header.js"></script>
+<script>
+    let answers=document.querySelectorAll(".accordion");
+    answers.forEach((event)=>{
+        event.addEventListener('click',()=>{
+            if(event.classList.contains("active")){
+                event.classList.remove("active");
+            }
+            else{
+                event.classList.add("active");
+            }
+        })
+    })
+</script>
 </body>
 </html>

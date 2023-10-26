@@ -3,110 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- les sources cachés -->
+    <meta http-equiv="Cache Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <!-- ------------------ -->
-    <title>SwiftFix</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- Fonts Section -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
-    <!-- End Fonts Section -->
+    <title>Document</title>
+    <link rel="stylesheet" href="services-style.css">
+    <link rel="stylesheet" href="responsive-services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
         <div class="header">
-            <div class="logo">
-                <img src="images/logo.svg" alt="img">
-                <p>SwiftFix</p>
-            </div>
-            <div class="navigation">
-                <div class="menu">
-                    <ul>
+                <img class="logo" src="images/logo.svg" alt="img">
+                <div class="navigation">
+                <div>
+                    <ul class="menu">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT US</a></li>
                         <li><a href="services.html">SERVICES</a></li>
                         <li><a href="contact.html">CONTACT US</a></li>
                     </ul>
                 </div>
-                <div>
-                    <img src="images/recherche.svg" alt="recherche">
+                <div class="recherche">
+                    <img class="recherche-icon" src="images/recherche.svg" alt="recherche">
+                    <div class="input">
+                        <input type="text" placeholder="recherche">
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="toggle"><i class="fa fa-bars"></i></div>
+                        <ul class="list-menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>               
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 <!---------------section 1------------------>
-<section>
-    <img class="background-about" src="images/background-service.webp" alt="background">
-            <div class="our-services">
-                <h2>Your to-do list is on us.</h2>
-            </div>
-</section>
+    <section>
+        <div class="our-services">
+            <h2>Your to-do list is on us.</h2>
+        </div>
+    </section>
 <!---------------section 2------------------>    
-        <section>
-            <div class="page-service">
-                <div class="class-service">
+     <section class="page-service">
                 <div class="maintenance-services">
-                    <img class="icon" src="images/puzzle.webp" alt="Furniture Assembly Services">
-                    <h3>Furniture Assembly Services</h3>
-                    <p>Furniture assembly doesn't need to be a huge hassle. Taskers will put together furniture in a snap and save you time and effort. Don't do it all on your own. Just task!</p>
+                    <div class="service">
+                        <img class="icon" src="images/puzzle.webp" alt="Furniture Assembly Services">
+                        <h3>Furniture Assembly Services</h3>
+                    </div>
+                    <button class="btn">read more</button>
                 </div>
-                <div class="maintenance-services">
-                    <img class="icon" src="images/monitor.svg" alt="TV Mounting & Installation">
-                    <h3>TV Mounting & Installation</h3>
-                    <p>Mounting into metal studs, brick, concrete, and cinder block requires specific drilling tools. Your Tasker will clean up after the task is completed, leaving your home just the way it was upon arrival—but with your TV right where you want it!</p>
+            <!-- -- -->
+                <div class="popup"> 
+                    <p style="margin-bottom: 6%;">
+                Furniture assembly doesn't need to be a huge hassle. Taskers will put together furniture in a snap and save you time and effort. Don't do it all on your own. Just task!
+                    </p> 
+                    <button class="btn-off">KK</button>
                 </div>
+                <div class="overaly"></div>
+        <!-- --- -->
                 <div class="maintenance-services">
-                    <img class="icon" src="images/electrician.webp" alt="Lighting Installation Services">
-                    <h3>Lighting Installation Services</h3>
-                    <p>Recessed lighting, also known as can lights, can add unique warmth and color to your room. It's common to install recessed lights during remodeling projects.</p>
+                    <div class="service">
+                        <img class="icon" src="images/monitor.svg" alt="TV Mounting & Installation">
+                        <h3>TV Mounting & Installation</h3>
+                    </div>
+                    <button class="btn">Read more</button>
                 </div>
-                <div class="maintenance-services">
-                    <img class="icon" src="images/wrench.svg" alt="Electrical Help & Services">
-                    <h3>Electrical Help & Services</h3>
-                    <p>You need to find someone to lend a hand with electrical help, but you don't want to hire someone you can't trust. After all, your home or office's electrical system is pretty important, and you can't afford to gamble with it. Don't worry - that's why Taskrabbit is here!
-                    </p>
+                <!-- - -->
+                <div class="popup"> 
+                    <p style="margin-bottom: 6%;">
+                        Furniture assembly doesn't need to be a huge hassle. Taskers will put together furniture in a snap and save you time and effort. Don't do it all on your own. Just task!
+                    </p> 
+                    <button class="btn-off">KK</button>
                 </div>
-                <div class="maintenance-services">
-                    <img class="icon" src="images/plumbing.svg" alt="Plumbing">
-                    <h3>Plumbing</h3>
-                    <p>Plumbing issues can be complicated and expensive. Fortunately, Taskrabbit can connect you to skilled, experienced Taskers who can solve your plumbing problems. When it comes to finding a plumber, look no further than Taskrabbit!</p>
+                <div class="overaly"></div>
+           <!-- -- -->
+
+        <div class="maintenance-services">
+            <div class="service">
+                <img class="icon" src="images/electrician.webp" alt="Lighting Installation Services">
+                <h3>Lighting Installation Services</h3>
+            </div> 
+            <button class="btn">Read more</button>
+        </div>  
+        
+         <div class="popup"> 
+                    <p style="margin-bottom: 6%;">
+                        Furniture assembly doesn't need to be a huge hassle. Taskers will put together furniture in a snap and save you time and effort. Don't do it all on your own. Just task!
+                    </p> 
+                    <button class="btn-off">KK</button>
                 </div>
-                <div class="maintenance-services">
-                    <img class="icon" src="images/instalation.svg" alt="Mounting & Installation">
-                    <h3>Mounting & Installation</h3>
-                    <p>Taskers can properly mount your TV on the wall and leave you happily clicking the remote.Need a hand mounting or installing shelves? Hire a Tasker with experience mounting shelves to the wall. Same-day service available!
-                    </p>
+                <div class="overaly"></div>
+            </div>
+            <!-- ----------- -->
+        
+        <div class="maintenance-services">
+            <div class="service">
+                <img class="icon" src="images/wrench.svg" alt="Electrical Help & Services">
+                <h3>Electrical Help & Services</h3>
                 </div>
-                <div class="maintenance-services">
+                <button class="btn">Read more</button>
+        </div>   
+        <div class="popup"> 
+            <p style="margin-bottom: 6%;">
+                You need to find someone to lend a hand with electrical help, but you don't want to hire someone you can't trust. After all, your home or office's electrical system is pretty important, and you can't afford to gamble with it. Don't worry - that's why Taskrabbit is here!
+            </p> 
+            <button class="btn-off">KK</button>
+        </div>
+        <div class="overaly"></div>
+         <!-----  -->
+        <div class="maintenance-services">
+            <div class="service">
+                <img class="icon" src="images/plumbing.svg" alt="Plumbing">
+                <h3>Plumbing</h3>
+                </div>
+                <button class="btn">Read more</button>
+            </div> 
+            <div class="popup"> 
+                <p style="margin-bottom: 6%;">
+                    Plumbing issues can be complicated and expensive. Fortunately, Taskrabbit can connect you to skilled, experienced Taskers who can solve your plumbing problems. When it comes to finding a plumber, look no further than Taskrabbit!
+                </p> 
+                <button class="btn-off">KK</button>
+            </div>
+            <div class="overaly"></div>
+               <!---------  -->
+        <div class="maintenance-services">
+            <div class="service">
+                <img class="icon" src="images/instalation.svg" alt="Mounting & Installation">
+                <h3>Mounting & Installation</h3>
+                </div>
+                <button class="btn">Read more</button>
+        </div>   
+        <div class="popup"> 
+            <p style="margin-bottom: 6%;">
+                Taskers can properly mount your TV on the wall and leave you happily clicking the remote.Need a hand mounting or installing shelves? Hire a Tasker with experience mounting shelves to the wall. Same-day service available!
+            </p> 
+            <button class="btn-off">KK</button>
+        </div>
+        <div class="overaly"></div>
+         <!-------  -->
+        <div class="maintenance-services">
+            <div class="service">
                     <img class="icon" src="images/contactless.svg" alt="Mounting & Installation">
                     <h3>Contactless Tasks</h3>
-                    <p>Contactless Prescription Pick-up & Delivery, Running Your Errands, Grocery Shopping & Delivery, Disinfecting Services, Drop Off Donations, Yard Work Services, Virtual Assistant
-                    </p>
                 </div>
-                <div class="maintenance-services">
-                    <img class="icon" src="images/Virtual-&-Online-Tasks.svg" alt="Mounting & Installation">
-                    <h3>Virtual & Online Tasks</h3>
-                    <p>Virtual Assistant, Organization, Data Entry, Computer Help
-                    </p>
+                <button class="btn">Read more</button>
+        </div>
+        <div class="popup"> 
+            <p style="margin-bottom: 6%;">
+                Contactless Prescription Pick-up & Delivery, Running Your Errands, Grocery Shopping & Delivery, Disinfecting Services, Drop Off Donations, Yard Work Services, Virtual Assistant
+            </p> 
+            <button class="btn-off">KK</button>
+        </div>
+        <div class="overaly"></div>
+
+        <!-- ---- -->
+        <div class="maintenance-services">
+            <div class="service">
+                <img class="icon" src="images/Virtual-&-Online-Tasks.svg" alt="Mounting & Installation">
+                <h3>Virtual & Online Tasks</h3>
+            </div>
+            <button class="btn">Read more</button>
+        </div>   
+        <div class="popup"> 
+            <p style="margin-bottom: 6%;">
+                Virtual Assistant, Organization, Data Entry, Computer Help
+            </p> 
+            <button class="btn-off">KK</button>
+        </div>
+        <div class="overaly"></div>
+         <!-------  -->
+        <div class="maintenance-services">
+            <div class="service">
+                <img class="icon" src="images/Yardwork-Services.svg" alt="Mounting & Installation">
+                <h3>Yardwork Services</h3>
+            </div>
+            <button class="btn">Read more</button>
+        </div>    
+        <div class="popup"> 
+            <p style="margin-bottom: 6%;">
+                Mulching Services, Lawn Fertilizer Service, Hedge Trimming Service, Outdoor Party Setup, Urban Gardening Service, Leaf Raking & Removal, Produce Gardening, Hose Installation, Shed Maintenance, Pressure Washing
+            </p> 
+            <button class="btn-off">KK</button>
+        </div>
+        <div class="overaly"></div>
+      <!----  -->
+    </section> 
+    <!-- ----client section -->
+    <section class="slide-container">
+        <div class="slide active">
+            <div class="user">
+                <img class="client" src="images/client1.jpg" alt="">
+                <div class="info-user">
+                    <h2>Sarah Deep</h2>
+                <div>
+                    <img class="star" src="images/icons8-étoile.gif" alt="">
+                    <img class="star" src="images/icons8-étoile.gif" alt="">
+                    <img class="star" src="images/icons8-étoile.gif" alt="">
+                    <img class="star" src="images/icons8-étoile.gif" alt="">
+                    <img class="star" src="images/etoile2.png" alt="">
                 </div>
-                <div class="maintenance-services">
-                    <img class="icon" src="images/Yardwork-Services.svg" alt="Mounting & Installation">
-                    <h3>Yardwork Services</h3>
-                    <p>Mulching Services, Lawn Fertilizer Service, Hedge Trimming Service, Outdoor Party Setup, Urban Gardening Service, Leaf Raking & Removal, Produce Gardening, Hose Installation, Shed Maintenance, Pressure Washing
+                </div>
+                <div class="comment">
+                    <p>
+                        We've been clients of [Your Company Name] for years, and we've never been disappointed. Their responsiveness and expertise are unmatched.
                     </p>
                 </div>
             </div>
-        </div>
-            
-        </section>
+        </div>   
+        <div class="slide">
+            <div class="user">
+                <img class="client" src="images/client2.jpg" alt="">
+                <div class="info-user">
+                    <h2>Leonardo Roof</h2>
+                <div>
+                    <img class="star" src="images/icons8-étoile.gif" alt="">
+                    <img class="star" src="images/icons8-étoile.gif" alt="">
+                    <img class="star" src="images/icons8-étoile.gif" alt="">
+                    <img class="star" src="images/etoile2.png" alt="">
+                    <img class="star" src="images/etoile2.png" alt="">
+                </div>
+                </div>
+                <div class="comment">
+                    <p>
+                        The maintenance service from [Your Company Name] has been exceptional. They solved our issue quickly and professionally. We are very pleased with their work   
+                    </p>
+                </div>
+            </div>
+        </div>   
+        <div class="slide">
+            <div class="user">
+                <img class="client" src="images/client3.jpg" alt="">
+                <div class="info-user">
+                    <h2>Nina Rose</h2>
+                <div>
+                    <img class="star" src="images/icons8-étoile.gif" alt="">
+                    <img class="star" src="images/icons8-étoile.gif" alt="">
+                    <img class="star" src="images/icons8-étoile.gif" alt="">
+                    <img class="star" src="images/icons8-étoile.gif" alt="">
+                    <img class="star" src="images/icons8-étoile.gif" alt="">
+                </div>
+                </div>
+                <div class="comment">
+                    <p>
+                        We've been clients of [Your Company Name] for years, and we've never been disappointed. Their responsiveness and expertise are unmatched.
+                    </p>
+                </div>
+            </div>
+        </div>   
+            <img id="next" src="images/droite.svg" onclick="next()" alt="droite">
+            <img id="preview" src="images/gauche.svg" onclick="preview()" alt="gauche">        
+    </section>
 <!---------------footer------------------>
 <footer>
     <div class="feets">
@@ -128,10 +283,10 @@
                 <div class="list">
                     <h4>Company</h4><br>
                     <ul>
-                        <li><a href="aboutUs.html">About</a></li>
-                        <li><a href="srvices.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="#">Careers</a></li>
-                        <li><a href="contactUs.html">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li><a href="#">Partners</a></li>
                     </ul>
                 </div>
@@ -143,9 +298,8 @@
                         <li><a href="#">Legal</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Status</a></li>
-                    </ul>    
+                    </ul>
                 </div>
-            </div>
         </div>
     </div>
     <div class="feet2">
@@ -158,7 +312,9 @@
        <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="img"></a>
     </div>
     </div>
-    
+    </div>
 </footer>
+<script src="header.js"></script>
+<script src="services.js"></script>
 </body>
 </html>

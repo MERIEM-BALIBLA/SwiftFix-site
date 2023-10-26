@@ -1,0 +1,125 @@
+@media screen and (min-width : 413px) and (max-width : 767px) {
+    .menu-b {
+        display: none;
+        
+    }
+
+    header {
+        position: static;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        margin-left: -53%;
+        margin-top: 2%;
+        width: 40%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .toggle i {
+        display: block;
+        font-size: 2rem;
+        position: absolute;
+        margin-left: 29%;
+        margin-top: 5%;
+    }
+     
+    .recherche {
+        flex-direction: row-reverse;
+    position: absolute;
+    right: 35%;
+    top: -6px;
+    }
+    
+    }
+
+/* ------------------------- */
+@media screen and (min-width : 413px) and (max-width : 767px) {
+    .our-services {
+       background-image:none;
+       padding:0;
+       text-align: center;
+    } 
+
+    .our-services h2 {
+    color: #004D7B;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 1.5px;
+    }
+    .service {
+      margin-bottom: 10%; 
+      display: flex;
+      gap: 12px;
+      color: var(--Text, #363940);
+      text-align: center;
+      font-family: Playfair Display;
+      font-size: 100%;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+  }
+    }
+ @media screen and (min-width : 413px) and (max-width : 767px) {
+    .page-service {
+       display: block;
+      width: 100%;
+      padding: 4% 16%;      
+    }
+    .maintenance-services {
+      margin-bottom: 10px;
+      width: 98%;
+      height: auto;
+      padding: 4%;
+      box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.1);
+      border-radius: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .n-service {
+        flex: 0 0 50%;
+        padding: 1% 15%;
+      }
+    .popup {
+    padding: 4%;
+    text-align: center;
+    width: 62%;
+    }
+  }
+/* ---------------- */
+  @media screen and (min-width : 413px) and (max-width : 767px) {
+   .feet1 {
+      background-color: #094B72;
+      color: #FFF;
+      display: block;
+      padding: 0;
+  }
+  .logo2 {
+      margin-left: 6rem;
+      margin-top: 3em;
+      display: block;
+  }
+  .feet2 {
+      background-color: #004D7B;
+      display: block;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      color: #ffffff;
+      text-align: center;
+  }
+   }
+ 
