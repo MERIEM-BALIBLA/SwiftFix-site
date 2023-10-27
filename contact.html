@@ -87,7 +87,7 @@
         </div>
         <div>
             <div class="MAP">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6563.952802744115!2d-8.528928881840777!3d32.24914254540518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1697184845667!5m2!1sfr!2sma" style="border:0;" allowfullscreen="#" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="myFrame">frame body</iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6563.952802744115!2d-8.528928881840777!3d32.24914254540518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1697184845667!5m2!1sfr!2sma" style="width:500px;height:300px; border:0;" allowfullscreen="#" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="myFrame">frame body</iframe>
             </div>
             <div class="tele">
                 <img src="images/telephone-number-svgrepo-com.svg" alt="tele">
@@ -140,8 +140,7 @@
         </div>
     </div>
     <div class="feet2">
-        <div><p>© 2023 SwiftFix. All rights reserved</p></div>
-    
+        <div><p>© 2023 SwiftFix. All rights reserved</p></div>  
     <div>
        <a href="https://www.instagram.com/accounts/login/"><img src="images/insta.svg" alt="img"></a> 
        <a href="https://www.google.com/?hl=fr"><img src="images/google.svg" alt="img"></a>
@@ -149,106 +148,9 @@
        <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="img"></a>
     </div>
     </div>
+    </div>
 </footer>
 <script src="header.js"></script>
-<script>
-    var error = document.querySelector("#error")
-    console.log(valide);
-function valide() {
-   var name = document.querySelector("#name").value;
-   if(name.length == 0){
-       error.innerHTML = "name's requiered";
-       error.style.color = "red";
-       return false;
-   }
-   if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
-       error.innerHTML = "rewrite your name";
-       error.style.color = "red";
-       return false;
-   }
-       error.innerHTML = "valid";
-       error.style.color = "green";
-       return true;
-    }
-var errorE = document.querySelector("#error-email")
-function valideEmail(){
-    var email = document.querySelector("#email").value;
-    if(email.length == 0){
-       errorE.innerHTML = "email's requiered";
-       errorE.style.color = "red";
-       return false;
-   }
-    if(!email.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)){
-        errorE.innerHTML = "Email incorecte";
-        errorE.style.color = "red";
-        return false;
-    }
-    errorE.innerHTML = "Email corecte";
-    errorE.style.color = "green";
-    return true;
-}
-var errorP = document.querySelector("#error-phone");
-function validateNumber() {
-    var phone = document.querySelector("#phone").value;
-    if (phone.length == 0) {
-        errorP.innerHTML = "Numéro requis";
-        errorP.style.color = "red";
-        return false;
-    }  
-    if (!phone.match(/^\+212-[67]\d{8}$/)) {
-        errorP.innerHTML = "Numéro incorrect";
-        errorP.style.color = "red";
-        return false;
-    } 
-    errorP.innerHTML = "Numéro valide";
-    errorP.style.color = "green";
-    return true;
-}
-var errorA = document.querySelector("#error-address");
-function validateAdress() {
-    var address = document.querySelector("#address").value;
-    if (address.length == 0) {
-        errorA.innerHTML = "Numéro requis";
-        errorA.style.color = "red";
-        return false;
-    }  
-    if (!address.match(/^[\w\s]{10,40}$/)){
-        errorA.innerHTML = "Numéro incorrect";
-        errorA.style.color = "red";
-        return false;
-    } 
-    errorA.innerHTML = "Numéro valide";
-    errorA.style.color = "green";
-    return true;
-}
-var errorM = document.querySelector("#error-message");
-function validateMessage() {
-    var message = document.querySelector("#message").value;
-    if (message.length == 0) {
-        errorM.innerHTML = "msg requis";
-        errorM.style.color = "red";
-        return false;
-    }  
-    if (!message.match(/^.{10,40}$/)) {
-        errorM.innerHTML = "msg incorrect";
-        errorM.style.color = "red";
-        return false;
-    } 
-    errorM.innerHTML = "msg valide";
-    errorM.style.color = "green";
-    return true;
- }
-var submiterror = document.getElementById('error-submit');
-
- function formvalidet(){
-    if(!valide() || !valideEmail() || !validateNumber() || !validateAdress() || !validateMessage()){
-        submiterror.innerHTML = 'please enter ur information !';
-        submiterror.style.color = "red";
-        setTimeout(function(){submiterror.style.display = 'none';},3000);
-        return false;
-    }
-    alert("Le message a ete bien enregistre !");
-}
-</script>
+<script src="contact.js"></script>
 </body>
 </html>

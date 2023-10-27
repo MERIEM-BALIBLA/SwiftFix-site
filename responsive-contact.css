@@ -1,4 +1,4 @@
-@media screen and (min-width : 413px) and (max-width : 767px) {
+    @media screen and (min-width : 413px) and (max-width : 767px) {
     .menu-b {
         display: none;      
     }
@@ -31,7 +31,7 @@
     }
     }
 /* ------------------------- */
-  @media screen and (min-width : 413px) and (max-width : 767px) {
+    @media screen and (min-width : 413px) and (max-width : 767px) {
     .contact {
         display: block;
         background-color: #F2F7FF;
@@ -40,30 +40,30 @@
      }
      }
      
-  @media screen and (min-width : 413px) and (max-width : 767px) {
-.form {
-    text-align: center;
-    padding: 5em;
-}
-.form h3 {
-    color: #094B72;
-    font-family: Playfair Display, sans-serif;
-    font-size: 31px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    letter-spacing: 1.8px;
-}
-}
-.info {
-        padding: 2% 0%;
-        display: flex;
-        flex-direction: column;
-}
-.info input {
-        width: 97%;
-        height: auto;
-}
+    @media screen and (min-width : 413px) and (max-width : 767px) {
+    .form {
+        text-align: center;
+        padding: 1em 5em;
+    }
+    }
+    .form h3 {
+        color: #094B72;
+        font-family: Playfair Display, sans-serif;
+        font-size: 31px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 1.8px;
+    }
+    .info {
+            padding: 2% 0%;
+            display: flex;
+            flex-direction: column;
+    }
+    .info input {
+            width: 97%;
+            height: auto;
+    }
     
     .info select {
        width: 97%;
@@ -82,29 +82,27 @@
     }
   
 
-  @media screen and (max-width : 960px) {
+    @media screen and (max-width : 960px) {
     .MAP {
         display: none;
     }
 
     .tele {
         padding: 0 28%;
+        margin-top: 0em;
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+    }
+    .email {
+        padding: 0 27% 12px 4%;
         margin-top: 2em;
         display: flex;
         flex-direction: row;
         gap: 2em;
     }
-    .email {
-            padding: 0 27% 12px 27%;
-            margin-top: 2em;
-            display: flex;
-            flex-direction: row;
-            gap: 2em;
-    }
-    
-  }
-
-  @media screen and (min-width : 413px) and (max-width : 767px) {
+    @media screen and (min-width : 413px) and (max-width : 767px) {
     .feet1 {
         background-color: #094B72;
         color: #FFF;

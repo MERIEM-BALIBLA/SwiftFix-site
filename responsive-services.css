@@ -99,10 +99,13 @@
     width: 62%;
     }
     .slide {
-        flex: 0 0 66%;
+        flex: 0 0 48%;    
     }
     .slide-container {
         gap: 16%;
+    }
+    .section2 {
+        overflow: hidden;
     }
   }
 /* ---------------- */

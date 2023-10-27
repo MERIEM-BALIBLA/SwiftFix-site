@@ -368,8 +368,9 @@ header {
  .personnage {
     margin-left: 1em;
     border-radius: 50%;
-    width: 5em;
-    height: 4em;
+    width: 38%;
+height: 28%;
+
  }
  
  .etoiles {
